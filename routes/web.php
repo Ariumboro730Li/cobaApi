@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home', [HomeController::class, "index"]);
+Route::get('get-customer', [HomeController::class, "getCustomer"]);
+Route::get('add-customer', [HomeController::class, "addCustomer"]);
+Route::post('add-customer', [HomeController::class, "addCustomer"]);
+Route::put('update-customer', [HomeController::class, "updateCustomer"]);
+Route::delete('delete-customer', [HomeController::class, "deleteCustomer"]);
